@@ -5,10 +5,13 @@ let plotData = [
      height: 8.2166834,
      width: 23.006714,
        id: 'p8', //renamed to match excel
+
+    // new values below
       class:'plot lost', //in place of style, so different tags determine appearance of disturbance
-      type: 'protestant', // added so things can be sorted by religion
+      type: 'Protestant', // added so things can be sorted by religion
       row: 1, // to show by row
-      year: 1900, //for animation by year of origin.... my nonsense numbers for demonstration
+      year: 1946, //for animation by year of origin.... my nonsense numbers for demonstration
+      condition: 'lost', //any additional condition notes
   },
 {
        y: 415.74664,
@@ -17,9 +20,10 @@ let plotData = [
      width: 23.006714,
        id: 'p7',
       class:'plot',
-      type: 'protestant',
+      type: 'Protestant',
       row: 1,
-      year: 1900,
+      year: 1958,
+      condition: 'normal',
   },
 {
      y: 432.72778,
@@ -28,9 +32,10 @@ let plotData = [
      width: 23.006714,
      id: 'p6',
     class:'plot',
-    type: 'protestant',
+    type: 'Protestant',
     row: 1,
-    year: 1900,
+    year: 1946,
+    condition: 'normal',
  },
 {
      y: 448.06561,
@@ -39,9 +44,10 @@ let plotData = [
      width: 23.006714,
      id: 'p5',
     class:'plot',
-    type: 'protestant',
+    type: 'Protestant',
     row: 1,
-    year: 1900,
+    year: 1970,
+    condition: 'normal',
  },
 {
      y: 465.59454,
@@ -50,9 +56,10 @@ let plotData = [
      width: 23.006714,
      id: 'p4',
     class:'plot',
-    type: 'protestant',
+    type: 'Protestant',
     row: 1,
-    year: 1902,
+    year: 1963,
+    condition: 'normal',
  },
 {
      y: 488.05347,
@@ -61,9 +68,10 @@ let plotData = [
      width: 23.006714,
      id: 'p3',
     class:'plot',
-    type: 'protestant',
+    type: 'Protestant',
     row: 1,
-    year: 1902,
+    year: 1952,
+    condition: 'normal',
  },
 {
      y: 503.93906,
@@ -72,9 +80,10 @@ let plotData = [
      width: 23.006714,
      id: 'p2',
     class:'plot',
-    type: 'protestant',
+    type: 'Protestant',
     row: 1,
-    year: 1905,
+    year: 1958,
+    condition: 'normal',
  },
 {
      y: 516.53796,
@@ -83,9 +92,10 @@ let plotData = [
      width: 23.006714,
      id: 'p1',
     class:'plot',
-    type: 'protestant',
+    type: 'Protestant',
     row: 1,
-    year: 1903,
+    year: 1963,
+    condition: 'normal',
  },
 {
      y: 588.297,
@@ -94,9 +104,10 @@ let plotData = [
      width: 23.006714,
      id: 'p53',
     class:'plot',
-    type: 'protestant',
+    type: 'Protestant',
     row: 1,
-    year: 1908,
+    year: 1968,
+    condition: 'normal',
  },
 {
      y: 601.99146,
@@ -105,9 +116,10 @@ let plotData = [
      width: 23.006714,
      id: 'p52',
     class:'plot',
-    type: 'protestant',
+    type: 'Protestant',
     row: 1,
-    year: 1910,
+    year: 1970,
+    condition: 'normal',
  },
 {
      y: 617.87708,
@@ -116,9 +128,10 @@ let plotData = [
      width: 23.006714,
      id: 'p51',
     class:'plot',
-    type: 'protestant',
+    type: 'Protestant',
     row: 1,
-    year: 1920,
+    year: 1972,
+    condition: 'normal',
  },
 {
      y: 631.57153,
@@ -127,9 +140,10 @@ let plotData = [
      width: 23.006714,
      id: 'p50',
     class:'plot',
-    type: 'protestant',
+    type: 'Protestant',
     row: 1,
-    year: 1912,
+    year: 1947,
+    condition: 'normal',
  },
 {
      y: 645.81378,
@@ -138,8 +152,9 @@ let plotData = [
      width: 23.006714,
      id: 'p49',
     class:'plot',
-    type: 'protestant',
+    type: 'Protestant',
     row: 1,
-    year: 1912,
+    year: 1950,
+    condition: 'normal',
  },
  ];
