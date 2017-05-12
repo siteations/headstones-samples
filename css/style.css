@@ -1,0 +1,42 @@
+.top-nav {
+	padding: 10px;
+	background-color: #f0f0f0;
+}
+
+.map {
+	width: 80vw;
+	height: 40vw;
+	background-color: #d3d3d3;
+	/* vw = viewport width, so 80% of viewport width, set to be 2:1 ratio */
+}
+
+.slider {
+	width: 80vw;
+	height: 50px;
+	/* px = pixel, with a set height instead of relative */
+}
+
+.comments {
+	width: 80vw;
+}
+
+/* to visualize plot conditions */
+
+.plot {
+	opacity:1;
+	fill:none;
+	stroke:#ffffff;
+	stroke-opacity:1
+}
+
+.lost { /* red */
+	stroke: #ff0000;
+}
+
+.disentered { /* blue */
+	stroke: #0000ff;
+}
+
+.unknown {
+	stroke: #ffffff;
+}
