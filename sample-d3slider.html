@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Sample Map Options - d3Slider </title>
+
+    <!-- Bootstrap -->
+    <link href="./css/bootstrap.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="container-fluid">
+      <div class="row top-nav">
+        <div class="col-lg-4">
+          <h1>MetFern/Home</h1>
+        </div>
+        <div class="col-lg-2"><h3>introduction</h3></div>
+        <div class="col-lg-2"><h3>histories</h3></div>
+        <div class="col-lg-2"><h3><a href="sample-d3slider.html">map</a></h3></div>
+        <div class="col-lg-2"><h3>bibliography</h3></div>
+      </div>
+      <br/>
+      <p> This template is just so you can anticipate a very simple structure - the only link that is coded in is the 'map' link... that will reload the page, using the current sample. Same structure is used in all demos and they all use the same minimal styling. Open this with a text/code editor like <a href="https://www.sublimetext.com/">Sublime Text</a> to explore the components/structure. In firefox or chrome, right click and inspect or view-source to instantly examine the html. Misc photos and maps from http://www.temblast.com/metfern/. See the imgData folder for those materials and a working version of your excel lay-out.</p>
+      <br/>
+
+      <div class="map center-block" id="map">
+        <svg id="mapSvg">
+          <image id="backgroundImage" xlink:href="imgData/googleNoOverlay.jpg" />
+          <text class="whiteLabels" id="pretooltip" x="40" y="40">Plot Information: </text>
+          <text class="whiteLabels" id="tooltip" x="40" y="60">+</text>
+        </svg>
+      </div>
+
+      <div class="slider center-block">
+      <h5>Select Dates</h5>
+      <form class="pb20">
+        <label id='label' for="rangeVal">Burials, up through: 1950</label>
+        <input type="range" id="rangeVal" min="1945" max="1980" value="1950" onChange="document.getElementById('label').innerHTML= 'Burials, up through: '+ this.value; filterByDate(this.value);"/>
+      </form>
+      </div>
+
+      <div class="comments center-block">
+      <h3>Comments and Context</h3>
+        <div class="row">
+          <div class="col-lg-4">
+              <h5>Your text and secondary images here.</h5>
+              <br/>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel justo eu augue fermentum bibendum. Ut urna turpis, lobortis ut ante eu, posuere mollis tellus. Mauris vitae suscipit dui. Vestibulum tincidunt risus nisi, eu pulvinar libero viverra quis. Fusce commodo libero quis diam pellentesque luctus a in velit. Donec fermentum sit amet sem interdum varius. Aliquam sed diam eget magna pharetra auctor. Nulla congue vitae dolor sed commodo. Vivamus purus purus, pellentesque in accumsan vel, feugiat non elit. Etiam ornare tincidunt tortor, ut aliquam ex blandit in. Fusce felis odio, tempor placerat fermentum ac, mollis ut urna. Cras posuere leo ex, tincidunt dignissim velit tincidunt ac. Nunc id tellus interdum, bibendum magna volutpat, ultricies ex. Nam sit amet odio ac risus ullamcorper luctus eget a orci.</p>
+              <ul>
+                <li>bullet points</li>
+                <li>bullet points</li>
+                <li>bullet points</li>
+              </ul>
+          </div>
+          <div class="col-lg-4">
+              <img src="imgData/numberedGraves.jpg" style="width:100%" />
+              <p>captions: as needed</p>
+          </div>
+          <div class="col-lg-4">
+              <img src="imgData/MetfernCemetary.jpg" style="width:100%" />
+              <p>captions: as needed</p>
+          </div>
+        </div>
+        <br/>
+      </div>
+
+      <div class="row top-nav">
+        <h1>Your footer </h1><p>With credits, year of project etc.</p>
+      </div>
+      <script src="./imgData/data/test-inkscapePlots-Formatted.js"></script>
+      <script src="./libraries/d3.js"></script>
+      <script src="./jsMapScripts/d3Slider.js"></script>
+    </div>
+  </body>
+
+</html>
