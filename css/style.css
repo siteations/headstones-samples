@@ -14,8 +14,10 @@
 	/* px = pixel, with a set height instead of relative */
 }
 
+
 .pb20 {
 	padding-bottom: 20px;
+	padding-top: 20px;
 	/* px = pixel, with a set height instead of relative */
 }
 
